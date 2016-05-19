@@ -39,6 +39,8 @@ export default {
 		 <span v-i18n="{value:'name',language:language}"></span>
 		 <span v-i18n="{value:'menu.goods',language:language}"></span>
 		 <span v-i18n="{value:'menu.order',language:language}"></span>
+		 <button @click="changeLanguage('cn')">中文</button>
+		 <button @click="changeLanguage('en')">EN</button>
 	</div>
 </template>
 <script>
