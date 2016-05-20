@@ -1,6 +1,7 @@
 # vue-i18n
 
-Internationalization plugin of VueJS 1.x
+Internationalization plugin of VueJS 1.x. 
+[Live demo](https://jinzhe.github.io/vue-i18n/)
 
 # How to use?
 
