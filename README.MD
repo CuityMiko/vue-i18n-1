@@ -35,13 +35,15 @@ export default {
 3.Write some code to init in app.vue.
 ```
 <template>
-	<div>
-		 <span v-i18n="{value:'name',language:language}"></span>
-		 <span v-i18n="{value:'menu.goods',language:language}"></span>
-		 <span v-i18n="{value:'menu.order',language:language}"></span>
-		 <button @click="changeLanguage('cn')">中文</button>
-		 <button @click="changeLanguage('en')">EN</button>
-	</div>
+<div>
+	<span v-i18n="{value:'name',language:language}"></span>
+	<span v-i18n="{value:'menu.goods',language:language}"></span>
+	<span v-i18n="{value:'menu.order',language:language}"></span>
+	<input type="text" v-i18n.placeholder="{value:'placeholder',language:language}">
+	<div v-i18n="{value:'replace',replace:[9,'admin'],language:language}"></div>
+	<button @click="changeLanguage('cn')">中文</button>
+	<button @click="changeLanguage('en')">EN</button>
+</div>
 </template>
 <script>
 export default {
